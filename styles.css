@@ -1,0 +1,83 @@
+.slot-machine {
+    height: 400px;
+}
+
+.slot-machine-body {
+    float: left;
+    width: 500px;
+    height: 250px;
+    background: black;
+    margin-top: 100px;
+}
+
+.slot-container {
+    float: left;
+    width: 100px;
+    height: 100px;
+    background: white;
+    margin: 75px 0 0 50px;
+    line-height: 100px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.slot {
+    position: relative;
+    top: 0;
+    transition: top 0.25s;
+}
+
+.slot.top {
+    top: -100px;
+}
+
+.slot.bottom {
+    top: 100px;
+}
+
+.control-handle {
+    float: left;
+    margin-left: 10px;
+}
+
+.circle {
+    position: relative;
+    top: 0;
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 100%;
+    transition: top 1s linear;
+}
+
+.circle.clicked {
+    top: 200px;
+}
+
+.circle:hover {
+    cursor: pointer;
+}
+
+.handle {
+    position: relative;
+    top: 0;
+    width: 10px;
+    height: 175px;
+    background: black;
+    margin-left: 20px;
+    transition: height 1s linear, top 1s linear;
+}
+
+.handle.clicked {
+    height: 0;
+    top: 175px;
+}
+
+.connector {
+    position: absolute;
+    top:200px;
+    width: 70px;
+    height: 70px;
+    background: gray;
+    margin-left: -10px;
+}
